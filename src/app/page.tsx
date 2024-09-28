@@ -107,7 +107,7 @@ const PortfolioWebsite = () => {
             >
               <h2 className="text-2xl font-semibold mb-4">Profil</h2>
               <p className="text-gray-700 dark:text-gray-300">
-                Professionnel chevronné avec 20 ans d'expérience dans la construction, spécialisé en gestion de chantiers et travaux de bâtiment. Expert technique avec d'excellentes compétences en gestion d'équipe, reconnu pour mener à bien des projets complexes, respectant délais et qualité. Rigoureux, dynamique et orienté solutions, je m'adapte aux nouvelles technologies de construction. Mon engagement pour la sécurité et ma collaboration efficace avec divers corps de métier font de moi un atout pour toute entreprise de construction ambitieuse.
+                Professionnel chevronné avec 20 ans d&#39;expérience dans la construction, spécialisé en gestion de chantiers et travaux de bâtiment. Expert technique avec d&#39;excellentes compétences en gestion d&#39;équipe, reconnu pour mener à bien des projets complexes, respectant délais et qualité. Rigoureux, dynamique et orienté solutions, je m&#39;adapte aux nouvelles technologies de construction. Mon engagement pour la sécurité et ma collaboration efficace avec divers corps de métier font de moi un atout pour toute entreprise de construction ambitieuse.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mt-2">
                 50 ans, Marié
