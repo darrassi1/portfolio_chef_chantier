@@ -45,7 +45,6 @@ const PortfolioWebsite = () => {
       duration: 2,
       repeat: Infinity,
       repeatType: "reverse" as const
-
     }
   };
 
@@ -63,7 +62,7 @@ const PortfolioWebsite = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            LAHFID SENNOUNI
+            OMAR SENNOUNI
           </motion.h1>
           <motion.div
             className="flex items-center space-x-2"
@@ -91,13 +90,13 @@ const PortfolioWebsite = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              className="w-48 h-48 rounded-full overflow-hidden shadow-lg"
-              whileHover={{ scale: 1.1, rotate: 360 }}
+              className="w-62 h-62 rounded-full overflow-hidden shadow-lg"
+              whileHover={{ scale: 1.6, rotate: 360 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <img
                 src="/assets/photo.png"
-                alt="LAHFID SENNOUNI"
+                alt="OMAR SENNOUNI"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -108,7 +107,10 @@ const PortfolioWebsite = () => {
             >
               <h2 className="text-2xl font-semibold mb-4">Profil</h2>
               <p className="text-gray-700 dark:text-gray-300">
-                Métallurgiste expérimenté avec 7 ans d&#39;expérience dans la construction et la fabrication métallique. Compétent en lecture de plans techniques, assemblage de structures métalliques et contrôle qualité. Fort accent mis sur la sécurité et le travail d&#39;équipe. 44 ans, Marié.
+                Professionnel chevronné avec 20 ans d'expérience dans la construction, spécialisé en gestion de chantiers et travaux de bâtiment. Expert technique avec d'excellentes compétences en gestion d'équipe, reconnu pour mener à bien des projets complexes, respectant délais et qualité. Rigoureux, dynamique et orienté solutions, je m'adapte aux nouvelles technologies de construction. Mon engagement pour la sécurité et ma collaboration efficace avec divers corps de métier font de moi un atout pour toute entreprise de construction ambitieuse.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mt-2">
+                50 ans, Marié
               </p>
             </motion.div>
           </motion.section>
@@ -122,9 +124,9 @@ const PortfolioWebsite = () => {
             <h2 className="text-2xl font-semibold mb-4">Contact</h2>
             <motion.div className="space-y-2" variants={staggerChildren}>
               {[
-                { icon: Phone, text: "+2126-5032-0076" },
-                { icon: Mail, text: "sennounilahfid@gmail.com" },
-                { icon: MapPin, text: "APT 17 IMB B LOT CHAMES BENSOUDA FES" }
+                { icon: Phone, text: "+212661-315861" },
+                { icon: Mail, text: "sennomar.74sm@gmail.com" },
+                { icon: MapPin, text: "N 25 RUE 3 HAFRET BENSLIMANE DHAR LAKHMISS FES" }
               ].map(({ icon: Icon, text }) => (
                 <motion.p
                   key={text}
@@ -149,7 +151,7 @@ const PortfolioWebsite = () => {
               className="grid grid-cols-2 md:grid-cols-3 gap-4"
               variants={staggerChildren}
             >
-              {['Service client', 'Flexibilité et adaptabilité', 'Excellent travail d\'équipe', 'Techniques de fabrication métallique', 'Procédures de sécurité', 'Lecture de plans techniques'].map((skill) => (
+              {['Sérieux', 'Dynamique', 'Gestion de chantiers', 'Construction et rénovation de bâtiments', 'Gestion d\'équipe', 'Planification et préparation de projets', 'Respect des normes de sécurité et de qualité'].map((skill) => (
                 <motion.li
                   key={skill}
                   className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg text-center shadow-md"
@@ -176,14 +178,62 @@ const PortfolioWebsite = () => {
             >
               {[
                 {
-                  title: "GENERALE CONSTRUCTION METALLIQUE SARL AU",
-                  date: "2021- 2022",
-                  description: "Construction Métallique"
+                  title: "STE TRAVAUX BAB TOUAHER SARL",
+                  date: "2023 - 2024",
+                  description: "Construction",
+                  details: [
+                    "Construire et rénover: Bâtir des structures, assurer leur solidité, réaliser les finitions, rénover et restaurer.",
+                    "Planifier et préparer: Interpréter les plans, respecter les normes de sécurité, préparer les chantiers, estimer les matériaux.",
+                    "Équipement et collaboration: Utiliser et entretenir les outils, collaborer avec d'autres corps de métier."
+                  ]
                 },
                 {
-                  title: "STE CHOUMOL SARL AU",
-                  date: "2015- 2021",
-                  description: "Construction Métallique"
+                  title: "STE AL CANTARA GENERALE BATIMENTS SARL",
+                  date: "2022 - 2023",
+                  description: "Construction",
+                  details: [
+                    "Conception, construction et rénovation de structures : expertise en bâtiment, solidification et finitions",
+                    "Gestion et planification de chantiers : interprétation de plans, conformité aux normes de sécurité, préparation logistique",
+                    "Optimisation des ressources : maîtrise des outils, estimation précise des matériaux, collaboration efficace inter-corps de métiers"
+                  ]
+                },
+                {
+                  title: "STE FES MULTI NEGOCE SARL AU",
+                  date: "2021 - 2022",
+                  description: "Construction",
+                  details: [
+                    "Bâtir des structures",
+                    "Assurer la solidité des constructions",
+                    "Réaliser les finitions"
+                  ]
+                },
+                {
+                  title: "STE AGB SARL",
+                  date: "2018 - 2020",
+                  description: "Construction",
+                  details: [
+                    "Bâtir des structures",
+                    "Assurer la solidité des constructions",
+                    "Réaliser les finitions",
+                    "Respecter les normes de sécurité",
+                    "Préparer les chantiers",
+                    "Utiliser et entretenir les outils",
+                    "Estimer les matériaux nécessaires"
+                  ]
+                },
+                {
+                  title: "ESPRIT CONCEPT",
+                  date: "2016",
+                  description: "Construction",
+                  details: [
+                    "Construction de murs",
+                    "Pose de briques et de parpaings",
+                    "Réalisation de fondations",
+                    "Coulage de dalles en béton",
+                    "Enduit et crépissage",
+                    "Coffrage et ferraillage",
+                    "Construction d'escaliers"
+                  ]
                 }
               ].map((job) => (
                 <motion.div
@@ -197,16 +247,9 @@ const PortfolioWebsite = () => {
                   <p className="text-gray-600 dark:text-gray-400">{job.date}</p>
                   <p className="mt-2 text-gray-700 dark:text-gray-300">{job.description}</p>
                   <ul className="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                    <li>Lecture et interprétation des plans et dessins techniques</li>
-                    <li>Découpe et façonnage des matériaux métalliques</li>
-                    <li>Assemblage de structures par soudage, boulonnage ou rivetage</li>
-                    <li>Montage et installation de structures métalliques sur site</li>
-                    <li>Contrôle qualité et vérification de la conformité des assemblages</li>
-                    <li>Application de traitements de surface et de peintures protectrices</li>
-                    <li>Maintenance et réparation des structures existantes</li>
-                    <li>Respect des normes de sécurité et utilisation d&#39;équipements de protection</li>
-                    <li>Utilisation et entretien d&#39;outils et machines spécifiques</li>
-                    <li>Coordination avec les autres corps de métier sur les chantiers</li>
+                    {job.details.map((detail, index) => (
+                      <li key={index}>{detail}</li>
+                    ))}
                   </ul>
                 </motion.div>
               ))}
@@ -226,14 +269,14 @@ const PortfolioWebsite = () => {
             >
               {[
                 {
-                  school: "ISTA ROUTE IMMOUZER FES",
-                  date: "2001-2003",
-                  description: "Diplôme de Technicien de Production en Construction Métallique"
+                  school: "ISTA NARGISS FES",
+                  date: "2021",
+                  description: "Formation Qualifiante en Métreur"
                 },
                 {
-                  school: "Lycee Ibnou khaldoune",
+                  school: "Lycee ibnou hanie FES",
                   date: "2000",
-                  description: "Baccalauréat Scientifique Option Sciences Expérimentales"
+                  description: "Baccalauréat scientifique"
                 }
               ].map((edu) => (
                 <motion.div
@@ -283,72 +326,56 @@ const PortfolioWebsite = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl font-semibold mb-4">Permis</h2>
-            <motion.p
-              className="bg-green-100 dark:bg-green-900 px-4 py-2 rounded-full text-green-800 dark:text-green-100 inline-block"
-              variants={fadeInUp}
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Permis de conduire, Catégorie B
-            </motion.p>
-          </motion.section>
-
-          <motion.section
-            initial={fadeInUp.initial}
-            animate={fadeInUp.animate}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-2xl font-semibold mb-4">Loisirs</h2>
             <motion.ul
               className="flex flex-wrap gap-4"
               variants={staggerChildren}
             >
-              {['Sport', 'Lecture', 'Voyage'].map((hobby) => (
+              {['Permis De Conduite B', 'Permis De Conduite C'].map((permis) => (
                 <motion.li
-                  key={hobby}
-                  className="bg-purple-100 dark:bg-purple-900 px-4 py-2 rounded-full text-purple-800 dark:text-purple-100"
+                  key={permis}
+                  className="bg-green-100 dark:bg-green-900 px-4 py-2 rounded-full text-green-800 dark:text-green-100"
                   variants={fadeInUp}
-                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  {hobby}
+                  {permis}
                 </motion.li>
               ))}
             </motion.ul>
           </motion.section>
-        </main>
 
-        <motion.footer
-          className="bg-gray-100 dark:bg-gray-800 p-6 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <p>&copy; 2024 LAHFID SENNOUNI. All rights reserved.</p>
-          <motion.div
-            className="mt-4 flex justify-center space-x-4"
-            variants={staggerChildren}
+          <motion.footer
+            className="bg-gray-100 dark:bg-gray-800 p-6 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
           >
-            <motion.a
-              href="mailto:sennounilahfid@gmail.com"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              animate={pulse}
+            <p>&copy; 2024 OMAR SENNOUNI. All rights reserved.</p>
+            <motion.div
+              className="mt-4 flex justify-center space-x-4"
+              variants={staggerChildren}
             >
-              Email Me
-            </motion.a>
-            <motion.a
-              href="tel:+212650320076"
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              animate={pulse}
-            >
-              Call Me
-            </motion.a>
-          </motion.div>
-        </motion.footer>
+              <motion.a
+                href="mailto:sennomar.74sm@gmail.com"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                animate={pulse}
+              >
+                Email Me
+              </motion.a>
+              <motion.a
+                href="tel:+212661315861"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                animate={pulse}
+              >
+                Call Me
+              </motion.a>
+            </motion.div>
+          </motion.footer>
+        </main>
       </div>
     </div>
   );
